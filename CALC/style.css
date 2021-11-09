@@ -1,0 +1,59 @@
+    body {
+        user-select: none;
+    }
+    
+    .container {
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 80px 80px repeat(3, 1fr);
+        background-color: rgb(250, 210, 31);
+        width: 320px;
+        left: 40%;
+    }
+    
+    input {
+        display: flex;
+        grid-column: 1/5;
+        background-color: rgb(255, 242, 124);
+        border: none;
+        text-align: end;
+        padding: 8px;
+        color:rgb(250, 210, 31);
+        font-family: sans-serif;
+        font-size: 40px;
+        width: 304px;
+    }
+
+    .item {
+        color: white;
+        height: 60px;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 40px;
+        cursor: pointer;
+        font-weight: bold;
+    }
+    
+    #del{
+        font-size: 25px;
+    }
+    
+    #itemEqual {
+        cursor: pointer;
+        margin-left: auto;
+        margin-right: auto;
+        position: sticky;
+        text-align: center;
+        line-height: 150px;
+        grid-column: 4;
+        grid-row: 6/8;
+        width: 76px;
+        height: 150px;
+        font-size: 300%;
+        padding: 0;
+        color: white;
+    }
+    
